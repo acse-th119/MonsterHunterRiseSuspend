@@ -1,1 +1,0 @@
-start pssuspend.exe -r MonsterHunterRise.exe

@@ -6,11 +6,12 @@ import subprocess
 from pynput.keyboard import GlobalHotKeys
 import time
 def on_activate_h():
-    subprocess.call('mhr_0.bat')
+    # subprocess.call('start C:\Games\ps_pause\pssuspend.exe MonsterHunterRise.exe')
+    subprocess.call('cmd /c start pssuspend.exe MonsterHunterRise.exe')
     print('<ctrl>+<alt>+h pressed')
 
 def on_activate_i():
-    subprocess.call('mhr_1.bat')
+    subprocess.call('cmd /c start pssuspend.exe -r MonsterHunterRise.exe')
     print('<ctrl>+<alt>+i pressed')
 
 # Press the green button in the gutter to run the script.
@@ -19,5 +20,5 @@ with GlobalHotKeys({
     '<ctrl>+<alt>+h': on_activate_h,
     '<ctrl>+<alt>+i': on_activate_i}) as h:
     h.join()
-time.sleep(5)
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

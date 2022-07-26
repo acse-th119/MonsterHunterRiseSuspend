@@ -45,7 +45,7 @@
  [],
  False,
  False,
- 1658843327,
+ 1658847597,
  [('run.exe',
    'c:\\users\\mongo\\pycharmprojects\\pythonproject\\venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])
